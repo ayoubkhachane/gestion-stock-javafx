@@ -35,14 +35,14 @@ src/
 ├── dao/        → Secure data access layer (SQL mapping & parameterization)
 ├── model/      → Domain models (Object definitions & Singleton connection)
 └── view/       → Graphical user interfaces (FXML layouts)
+```
 
-
-🚀 Setup & Launch
+## 🚀 Setup & Launch
 1- Import the magasin_bd.sql script into your local MySQL instance.
 
 2- Configure your database credentials inside model/SingletonConnection.java (username/password).
 
 3- Run app/MainApp.java ensuring the JavaFX VM arguments are properly configured.
 
-👤 Author
+## 👤 Author
 Ayoub Khachane
