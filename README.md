@@ -22,9 +22,13 @@ Application JavaFX de gestion de stock avec base de données MySQL.
 ## 📁 Structure
 src/
 ├── app/           → Point d'entrée
+
 ├── controller/    → Logique métier
+
 ├── dao/           → Accès données (SQL)
+
 ├── model/         → Classes métier
+
 └── view/          → Interface FXML
 
 
