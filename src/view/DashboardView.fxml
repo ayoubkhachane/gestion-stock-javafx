@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.DashboardController"
+      spacing="20" style="-fx-padding: 30; -fx-background-color: #ecf0f1;">
+
+    <Label text="📊 Tableau de Bord" 
+           style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"/>
+    
+    <HBox spacing="20" alignment="CENTER">
+        <!-- Statistique 1 -->
+        <VBox style="-fx-background-color: #3498db; -fx-padding: 20; -fx-background-radius: 10;" 
+              alignment="CENTER" prefWidth="150">
+            <Label fx:id="lblTotalProduits" text="0" 
+                   style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+            <Label text="Produits" style="-fx-text-fill: white; -fx-font-size: 14px;"/>
+        </VBox>
+        
+        <!-- Statistique 2 -->
+        <VBox style="-fx-background-color: #e74c3c; -fx-padding: 20; -fx-background-radius: 10;" 
+              alignment="CENTER" prefWidth="150">
+            <Label fx:id="lblStockBas" text="0" 
+                   style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+            <Label text="Stock Bas" style="-fx-text-fill: white; -fx-font-size: 14px;"/>
+        </VBox>
+        
+        <!-- Statistique 3 -->
+        <VBox style="-fx-background-color: #27ae60; -fx-padding: 20; -fx-background-radius: 10;" 
+              alignment="CENTER" prefWidth="150">
+            <Label fx:id="lblValeurStock" text="0" 
+                   style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+            <Label text="Valeur Stock (DH)" style="-fx-text-fill: white; -fx-font-size: 12px;"/>
+        </VBox>
+    </HBox>
+    
+    <!-- Camembert -->
+    <PieChart fx:id="pieChart" prefHeight="300" title="Répartition par catégorie"/>
+    
+    <Button text="Fermer" onAction="#fermer" 
+            style="-fx-background-color: #95a5a6; -fx-text-fill: white; -fx-font-weight: bold;"/>
+
+</VBox>
